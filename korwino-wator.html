@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+var wiersz1 = ["Ja chcę powiedzieć jedną rzecz:", "Trzeba powiedzieć jasno:", "Jak powiedział wybitny krakowianin Stanisław Lem,", "Proszę mnie dobrze zrozumieć: ", "Ja chciałem państwu przypomnieć, że", "Niech państwo nie mają złudzeń:", "Powiedzmy to wyraźnie:"];
+
+var wiersz2 = ["przedstawiciele czerwonej hołoty", "ci wszyscy (tfu!) geje", "funkcjonariusze reżymowej telewizji", "tak zwani ekolodzy", "ci wszyscy (tfu!) demokraci", "agenci bezpieki", "feminaziski"];
+
+var wiersz3 = ["zupełnie bezkarnie", "całkowicie bezczelnie", "o poglądach na lewo od komunizmu", "celowo i świadomie", "z premedytacją", "od czasów Okrągłego Stołu", "w ramach postępu"];
+
+var wiersz4 = ["nawołują do podniesienia podatków", "próbują wyrzucić kierowców z miast", "próbują skłócić Polskę z Rosją", "głoszą brednię o globalnym ociepleniu", "zakazują posiadania broni", "nie dopuszczają prawicy do władzy", "uczą dzieci homoseksualizmu"];
+
+function Phrase(){
+    var word1 = Math.floor(Math.random() * wiersz1.length);
+    var word2 = Math.floor(Math.random() * wiersz2.length);
+    var word3 = Math.floor(Math.random() * wiersz3.length);
+    var word4 = Math.floor(Math.random() * wiersz4.length);
+var zdanie = `${wiersz1[word1]} ${wiersz2[word2]} ${wiersz3[word3]} ${wiersz4[word4]}`;
+alert(zdanie);
+}
+
+Phrase();
+
+</script>
+
+
+</body>
+</html>
