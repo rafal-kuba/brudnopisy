@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1> Zielona Planeta </h1>
+    <p id="greenplanet">Wszystko jest w porządku.</p>
+    <h1> Czerwona Planeta </h1>
+    <p id="redplanet">Nie ma tu nic ciekawego.</p>
+    <h1> Niebieska Planeta</h1>
+    <p id="blueplanet">Wszystkie systemy sprawne.</p>
+    <script>
+    var planet = document.getElementById("greenplanet");
+    planet.innerHTML = "Alarm czerwony: rozpoczęto ostrzał z fazerów!";
+    console.log(planet.innerHTML);
+    </script>
+</body>
+</html>

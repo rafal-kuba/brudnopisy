@@ -1,18 +1,26 @@
-var eightBall = {
-    index: 0,
-    advice: ["tak", "nie", "może", "nie ma szans"],
-    shake: function() {
-        this.index = this.index + 1;
-        if(this.index >= this.advice.length){
-            this.index = 0;
-        }
+var fiat = {
+    make: "Fiat",
+    model: "500",
+    year: 1957,
+    color: "szaroniebieski",
+    passengers: 2,
+    convertible: false,
+    mileage: 88000,
+    started: false,
+    start: function(){
+        this.started = true;
     },
-    look: function(){
-        return this.advice[this.index];
+    stop: function(){
+        this.started = false;
+    },
+    drive: function(){
+        if(this.started){
+            alert("Bruuum");
+        } else {
+            alert("Najpierw musisz odpalić silnik!");
+        }
     }
 }
 
-eightBall.shake();
-console.log(eightBall.look3());
-
-}
+var starter = fiat.start();
+var driver = fiat.drive();
